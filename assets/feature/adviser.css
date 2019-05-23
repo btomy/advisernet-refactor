@@ -1,0 +1,320 @@
+.advisernet .right h1 {
+  color: #2A8CA2;
+  font-size: 36px;
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.advisernet .right h1,.advisernet .right h2,.advisernet .right h3 {
+  color: #2A8CA2;
+}
+
+.advisernet .title__subheading{
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.advisernet .main-container {
+  background: #fff;
+}
+
+.right {
+  width: 100%;
+  display:inline-block;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.sidebar__menu {
+  width: 100%;
+  display:inline-block;
+  display: inline-flex;
+  flex-direction: column;
+  outline: 1px solid #fcbb69;
+  padding: 10px;
+  margin-bottom: 20px;
+  height: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.sidebar__menu h2 {
+  clear: left;
+  font-size: 1.8rem;
+  color: #2A8CA2;
+  font-weight: bold;
+  margin: 0;
+}
+.sidebar__menu h2:nth-child(2){
+    display:none;
+        margin-top: 1em;
+}
+
+.sidebar__menu--heading_mobile{
+  margin: 0;
+  position: relative;
+}
+
+.sidebar__menu h4 {
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.sidebar__menu--list {
+  list-style: none;
+  list-style-type: none;
+  padding-left: 0;
+  display: none;
+}
+
+.sidebar__menu .sidebar__menu--sub-heading {
+  font-size: 14px;
+  border-top: 1px solid #D1CFCF;
+  margin: 0;
+  position: relative;
+  padding: 0;
+}
+
+.sidebar__menu .sidebar__menu-toggle-wrapper:hover {
+  background-color: #e3f4ff;
+}
+
+
+.sidebar__menu--sub-heading .sidebar__menu-link {
+  text-decoration: none;
+  color: #454545;
+  border: none;
+  display: inline-block;
+  padding: 10px;
+  width: 90%;
+}
+
+.sidebar__menu .sidebar__menu--heading {
+  font-size: 18px;
+  color: #2A8CA2;
+  font-weight: 600;
+  padding: 15px 0 0 10px;
+  margin: 0 0 10px;
+  border-top: 1px solid #D1CFCF;
+}
+
+.sidebar__menu .sidebar__menu--heading:first-child {
+  border: none;
+}
+
+.sidebar__menu .sidebar__menu--sub-heading:last-child {
+  border-bottom: 1px solid #D1CFCF;
+}
+
+.sidebar__sub--menu {
+  border-left: 1px solid #D1CFCF;
+  list-style: none;
+  list-style-type: none;
+  margin: 0 0 10px 15px;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.sidebar__sub--menu li {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+.sidebar__sub--menu li a {
+  padding: 5px;
+  padding-left: 10px;
+  overflow: hidden;
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  color: #000;
+  font-size:14px;
+}
+
+.sidebar__sub--menu li a:focus,
+.sidebar__sub--menu li a:hover {
+  background: none;
+}
+
+.sidebar__menu .sidebar__sub--menu li:hover:before {
+  content: "\f105";
+  font-family: cab-icons;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 14px;
+  position: absolute;
+  background: white;
+  width: 8px;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  transform: translate(-4px, 0px);
+  transition: .5s all;
+}
+
+.sidebar__menu .sidebar__sub--menu li.active:before {
+  content: "\f105";
+  font-family: cab-icons;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 14px;
+  position: absolute;
+  background: white;
+  width: 6px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  transform: translate(-4px, 0px);
+  transition: .5s all;
+}
+
+.sidebar__sub--menu.collapsed {
+  display: none;
+}
+
+.sidebar__menu-toggle-wrapper{
+  display: block;
+  position: relative;
+}
+
+.sidebar__menu-toggle-wrapper .sidebar__menu-toggle{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  font-size: 0;
+  background: none;
+}
+.sidebar__menu-toggle:focus,.sidebar__menu-toggle:hover,.sidebar__menu-toggle:active{
+  outline: none;
+  border: none;
+  background:none;
+  box-shadow: none;
+}
+
+.sidebar__menu-toggle:focus{
+  background: none;
+  outline: none;
+  border: 2px solid #FCBB69;
+  width: 32px;
+}
+
+.sidebar__menu-link:focus{
+  outline: none;
+  border: 2px solid #FCBB69;
+  padding: 8px;
+}
+
+.sidebar__menu--sub-heading.expanded.active .sidebar__menu-toggle-wrapper{
+  background-color: #e3f4ff;
+}
+
+.sidebar__menu--heading_mobile.expanded:after{
+  content: "\f068";
+  font-family: cab-icons;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  color: #000;
+  position: absolute;
+  right: 10px;
+  top: 14px;
+}
+
+.sidebar__menu--heading_mobile:after{
+  content: "\f067";
+  font-family: cab-icons;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  color: #000;
+  position: absolute;
+  right: 10px;
+  top: 14px;
+}
+
+.sidebar__menu--sub-heading.children.expanded .sidebar__menu-toggle::after {
+  content: "\f068";
+  font-family: cab-icons;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  color: #000;
+}
+
+.sidebar__menu--sub-heading.children .sidebar__menu-toggle::after {
+  content: "\f067";
+  font-family: cab-icons;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  color: #000;
+}
+
+.scroll{
+  height: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.sidebar__menu.sticky{
+  position: fixed;
+  top: 0px;
+  width: calc(30% - 20px);
+}
+
+@media (min-width: 750px) {
+    .sidebar__menu--heading_mobile{
+        display:none;
+    }
+  .sidebar__menu{
+    width: 30%;
+    outline: none;
+    padding: 0;
+  }
+  .sidebar__menu h2{
+    margin: 0 0 1rem;
+  }
+  .sidebar__menu h2:nth-child(2){
+      display:block;
+      margin-top:0;
+      padding-top: 20px;
+  }
+  .right {
+    width: 67%;
+  }
+  .sidebar__menu--list{
+    display: block;
+  }
+}
+
+/* @media (min-width: 1020px) {
+  .sidebar__menu.sticky{
+    width: calc(30% - 20px);
+  }
+} */

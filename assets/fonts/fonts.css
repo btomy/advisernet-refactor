@@ -1,0 +1,15 @@
+/**
+ * Bring in the fonts for testing purposes
+ */
+@font-face {
+    font-family: 'cab-icons';
+    src:url('cab-icons.eot');
+    src:url('cab-icons.eot') format('embedded-opentype'),
+        url('cab-icons.ttf') format('truetype'),
+        url('cab-icons.woff') format('woff'),
+        url('cab-icons.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
